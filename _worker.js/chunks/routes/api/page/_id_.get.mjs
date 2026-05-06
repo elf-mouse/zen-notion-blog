@@ -1,0 +1,2 @@
+import{d as t,c as s}from"../../../nitro/nitro.mjs";import{f as o}from"../../../_/notion.mjs";const a=t(async t=>{var a;const e=null==(a=t.context.params)?void 0:a.id;if(!e)throw s({statusCode:400,statusMessage:"Page ID is missing."});try{const a=await o(t,e);if(!a)throw s({statusCode:404,statusMessage:"Page not found."});return a}catch(t){throw s({statusCode:(null==t?void 0:t.status)||500,statusMessage:(null==t?void 0:t.message)||"Failed to fetch the page from Notion"})}});export{a as default};
+//# sourceMappingURL=_id_.get.mjs.map

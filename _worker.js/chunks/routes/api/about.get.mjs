@@ -1,2 +1,0 @@
-import{d as t,u as o,c as s}from"../../nitro/nitro.mjs";import{f as a}from"../../_/notion.mjs";const e=t(async t=>{const e=o(t).notionAboutPageId;if(!e||"your_about_page_id_here"===e)throw s({statusCode:404,statusMessage:"About page is not configured via environment variables."});try{return await a(t,e)}catch(t){throw s({statusCode:(null==t?void 0:t.status)||500,statusMessage:(null==t?void 0:t.message)||"Failed to fetch the About page from Notion"})}});export{e as default};
-//# sourceMappingURL=about.get.mjs.map

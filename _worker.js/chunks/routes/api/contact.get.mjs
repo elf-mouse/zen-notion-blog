@@ -1,2 +1,0 @@
-import{d as t,u as o,c as a}from"../../nitro/nitro.mjs";import{f as s}from"../../_/notion.mjs";const e=t(async t=>{const e=o(t).notionContactPageId;if(!e||"your_contact_page_id_here"===e)throw a({statusCode:404,statusMessage:"Contact page is not configured via environment variables."});try{return await s(t,e)}catch(t){throw a({statusCode:(null==t?void 0:t.status)||500,statusMessage:(null==t?void 0:t.message)||"Failed to fetch the Contact page from Notion"})}});export{e as default};
-//# sourceMappingURL=contact.get.mjs.map
